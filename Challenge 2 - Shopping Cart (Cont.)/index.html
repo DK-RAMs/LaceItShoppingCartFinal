@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <!-- Head section of website -->
+    <head>
+        <title>Buy HICKIES Originals</title>
+        
+        <!-- Metadata -->
+        
+            <meta charset="utf-8"/>
+            <meta name="description" content="Buy HICKIES Originals on laceit.org"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <!-- Metadata End -->
+        
+        
+        <!-- CSS Links -->
+        
+        <!-- Bootstrap CSS links -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="laceitBuyItem.css"/>
+        <!-- End CSS Links -->
+        
+    </head>
+    
+    <!--Start of body of HTML Doc -->
+    <body>
+        <!-- Navbar items-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-fixed-top sticky">
+
+            <div id="yeet" class="bg-dark text-centre">
+                <img src="img/laceIt-logo.png" id="lace-it-logo"/>
+            </div>
+            </nav>
+
+            <!-- End Navbar items-->
+
+            
+        <div id="customizethis">
+        <!--------------- Page Items ----------------------------->
+            <div id="pageitems" class="container-fluid">
+
+                <h1 id="hickiesheading">HICKIES Originals</h1>
+
+                <div id="bunch-of-items-container">
+                    <div id="starandpriceregion">
+                        <div id="starregion">
+                            <!-- Align stars with Text-->
+                            <span id="star-region">
+                                <img src="img/newstar.png" class="stars"  id="star1">
+                                <img src="img/newstar.png" class="stars"  id="star2">
+                                <img src="img/newstar.png" class="stars"  id="star3">
+                                <img src="img/newstar.png" class="stars"  id="star4">
+                                <img src="img/newstar.png" class="stars"  id="star5">
+                            </span>
+                            <span id="reviews" class="d-inline">
+                                <a><span id="numreviews">1,293 Reviews</span></a>
+                            </span>
+                        </div>
+
+                        <!-- Do prices CSS -->
+                        <div id="prices">
+                            <p><strong><span id="netprice">$<span id="netpriceval">14.99</span></span></strong><sub id="baseprice">$<span id="basepriceval">17.99</span></sub><sub id="discrate"><span id="discrateval"> 25</span>% OFF</sub></p>
+                        </div>
+                        <h5 id="special">Online Exclusive</h5>
+                        <div id="colorsdiv">
+                            <p id="color-spec">
+                                <strong>COLOR: </strong><span id="selected-color"></span>
+                            </p>
+
+                            <!-- Color selector (Mostly done in Javascript) -->
+                            <div id="stuff-div" class="d-inline">
+                                <div id="colorselector" class="container overflow-auto">
+                                <!-- Use inline divs -->
+                                </div>
+                                <div id="hickies-laces-display">
+                                    <img id="lace-pic" src="img/hickies_qedkzr.jpeg" class="img-responsive">
+                                </div>
+                            </div>
+                            <!-- Rest of Page items -->
+
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div id="rest-of-page">
+                                <p onclick="window.location.reload()">Size guide</p>
+                                <p>Your Custom Fit</p>
+                                <div id="checkout-stuff">
+                                    <div id="quantity-div" class="d-inline btn">0</div>
+                                    <button type="button" id="add2cartbutton" class="btn" data-toggle="modal" data-target="#add2cartModal">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <hr/>
+                <!-- Details section -->
+                <div id="cartItems">
+                    <h5 id="cartDetailsHeading">DETAILS</h5>
+                    <div id="itemdetails" class="container-fluid">
+                        <div id="selected-items">
+                            <br/>
+                            <div>No Items in cart</div>
+                            <br/>
+                        </div>
+                    </div>
+                    <button type="button" id="checkoutbutton" class="btn" data-toggle="modal" data-target="#checkoutModal">Check out</button>
+                </div>
+                <hr/>
+
+                <!-- Footer items-->
+                <div id="additionalinfo">
+                    <a href="#" data-toggle="modal" data-target="#needhelpModal">Need help?</a>
+                    <br/>
+                    <br/>
+                    <a href="#" data-toggle="modal" data-target="#shippingModal">Shipping & returns</a>
+                </div>
+                <!-- End footer items-->
+            </div>
+        
+        
+        
+        
+        <!----------------------- Modals ------------------------------>
+            
+            
+            <!-- Add2CartModal -->
+            
+            <div id="add2cartModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="Yes, how many would you like?" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="add2cartModalLongTitle">Add to cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="hick-exit-modal">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="add2CartModalBody">
+                            
+                            <!-- Modal elements generated via Javascript-->
+                            <div></div>
+                        </div>
+                        <div id="add2CartModalFooter" class="modal-footer">
+                            <!-- Modal buttons generated via Javascript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Check out Modal -->
+            
+            <div id="checkoutModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="Cart" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="checkoutModalLongTitle">Total Price:<span id="totalcartPriceSpan"> <strong>$<span id="totalcartPrice">14.99</span></strong></span></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="hick-exit-modal">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="checkoutModalBody">
+                            <table id="checkoutTable" class= table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Number</th>
+                                        <th scope ="col"></th>
+                                        <th scope="col">Item Name</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody id="checkoutTableBody">
+                                    <!-- Generated via Javascript --> 
+                                </tbody>
+                            </table>
+                            <!-- Modal elements generated via Javascript-->
+                            <div></div>
+                        </div>
+                        <div id="checkoutModalFooter" class="modal-footer">
+                            <!-- 3 Buttons, 1 for cancel, 1 for clear cart, 1 for pay now --> 
+                            <button type="button" id="closecheckoutModalButton" data-dismiss="modal" class="btn hick-modal-btn-cancel">
+                                Close
+                            </button>
+                            <button type="button" id="clearcartButton" data-dismiss="modal" class="btn">Clear Cart</button>
+                            <button type="submit" id="paynowButton" class="btn" onclick="window.open(https://www.paypal.com/za/signin)" data-dismiss="modal">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Need help Modal -->
+            
+            <div id="needhelpModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="Help has arrived" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="add2cartModalLongTitle">Customer Support</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="hick-exit-modal">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add all div elements here -->
+                            <p id="num-items-spec">If you are in need of any support or need assistance with products, please send an email to:</p>
+                            <a href="https://gmail.com" id="customer_support_email" id="customerSupportEmail" target="_blank">
+                                customerservice@laceit.org
+                            </a>
+                            <br/>
+                            <br/>
+                            <p id="altHelpCallDesk">Alternatively, you can also reach out to us at the number below and someone from our help desk will get to you as soon as they are available:</p>
+                            <a href="https://globfone.com/call-phone/" id="customerSupportPhone" target="_blank">+27 21 685 1953</a>
+                        </div>
+                        <div id="addtocartButtons" class="modal-footer">
+                            <button type="button" id="closeNeedHelpModalButton" data-dismiss="modal" class="btn hick-modal-btn-cancel">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shipping & Returns Modal -->
+            
+            <div id="shippingModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="No likey? Just give it here" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="add2cartModalLongTitle">Shipping & Returns</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="hick-exit-modal">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add all div elements here -->
+                            <p id="shipping_refund_policy">If you are not pleased with your item, or want to clarify on shipping, email us at:
+                            </p>
+                            <a href="https://gmail.com/mail" id="shipping_refund_policy_email" target="_blank">
+                            shippingandreturns@laceit.org.</a>
+                        </div>
+                        <div id="addtocartButtons" class="modal-footer">
+                            <button type="button" id="closeShippingModalButton" data-dismiss="modal" class="btn hick-modal-btn-cancel">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Scripts-->
+        
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="color.js" type="application/ecmascript"></script>
+            <script src="main.js" type="application/ecmascript"></script>
+        <script>
+            $('#exampleModal').on('show.bs.modal', function (e) {
+            $('body').addClass("example-open");
+            }).on('hide.bs.modal', function (e) {
+            $('body').removeClass("example-open");
+            })
+        </script>
+        <!--End Scripts-->
+    </body>
+    
+    <!-- Scripts placed on the bottom of html page -->
+</html>
